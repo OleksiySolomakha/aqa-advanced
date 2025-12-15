@@ -8,4 +8,4 @@ let age = 20;
 
 const firstName = "John";
 
-console.log(chalk.bgCyanBright(firstName, age));
+console.log(chalk.bgCyanBright(`${firstName} is ${age} years old`));
