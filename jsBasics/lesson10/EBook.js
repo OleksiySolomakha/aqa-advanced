@@ -14,16 +14,24 @@ class EBook extends Book {
 		);
 	}
 
-	get Format() {
-		return this.format;
+	get format() {
+		return this._format;
 	}
 
-	set Format(value) {
+	set format(value) {
 		if (!value || typeof value !== 'string' || value.length <= 1) {
 			throw new Error('Format must be at least 2 characters long and be a string');
-			return;
 		}
-		this.format = value;
+		this._format = value;
+	}
+
+	static addBookFormat(book, format) {
+		return new EBook(
+			book.title,
+			book.author,
+			book.publishYear,
+			format
+		)
 	}
 }
 
