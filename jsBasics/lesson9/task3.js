@@ -1,13 +1,13 @@
 const car1 = {
-    brand: 'BMW',
-    modal: 'G20',
-    year: 2020
+	brand: 'BMW',
+	modal: 'G20',
+	year: 2020,
 };
 
 const car2 = {
-    brand: 'Subaru',
-    modal: 'BRZ',
-    owner: 'John Speena'
+	brand: 'Subaru',
+	modal: 'BRZ',
+	owner: 'John Speena',
 };
 
 let car3 = { ...car1, ...car2 };

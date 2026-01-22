@@ -2,7 +2,7 @@ import { Book } from './Book.js';
 
 class EBook extends Book {
 	constructor(newTitle, newAuthor, newPublishYear, newFormat) {
-        super(newTitle, newAuthor, newPublishYear);
+		super(newTitle, newAuthor, newPublishYear);
 		this.format = newFormat;
 	}
 
@@ -26,12 +26,7 @@ class EBook extends Book {
 	}
 
 	static addBookFormat(book, format) {
-		return new EBook(
-			book.title,
-			book.author,
-			book.publishYear,
-			format
-		)
+		return new EBook(book.title, book.author, book.publishYear, format);
 	}
 }
 

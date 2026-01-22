@@ -1,10 +1,10 @@
-import chalk from "chalk";
+import chalk from 'chalk';
 
 const firstArray = [2, 4, 'green', 'Subaru'];
 const secondArray = [1, 9, 'red', 'BMW'];
 
 function addMassives(first, second) {
-    return first.concat(second);
+	return first.concat(second);
 }
 
 let concatMas = addMassives(firstArray, secondArray);

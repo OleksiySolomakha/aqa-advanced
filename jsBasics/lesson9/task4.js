@@ -1,7 +1,7 @@
 const person = {
-    firstName: 'Name',
-    lastName: 'Last',
-    age: 11
+	firstName: 'Name',
+	lastName: 'Last',
+	age: 11,
 };
 
 console.log('Srart person object is:', person);

@@ -6,8 +6,7 @@ class Book {
 	}
 
 	printInfo() {
-		console.log(`The book "${this.title}" was` 
-			+ `published in ${this.publishYear}, written by ${this.author}.`);
+		console.log(`The book "${this.title}" was` + `published in ${this.publishYear}, written by ${this.author}.`);
 	}
 
 	get title() {
@@ -37,19 +36,19 @@ class Book {
 	}
 
 	set publishYear(value) {
-		if(value < 1700 || value > 2026 || typeof value !== 'number') {
+		if (value < 1700 || value > 2026 || typeof value !== 'number') {
 			throw new Error('Publish year must be more then 1700 and less then 2026, and must be a number');
 		}
 		this._publishYear = value;
 	}
 
 	static findOldestBook(arrayOfBooks) {
-		if(!Array.isArray(arrayOfBooks) || arrayOfBooks.length === 0) {
-			throw new Error('Array of books is invalid or empty')
+		if (!Array.isArray(arrayOfBooks) || arrayOfBooks.length === 0) {
+			throw new Error('Array of books is invalid or empty');
 		}
 
 		return arrayOfBooks.reduce((oldest, current) => {
-			if(current.publishYear < oldest.publishYear) {
+			if (current.publishYear < oldest.publishYear) {
 				return current;
 			} else {
 				return oldest;

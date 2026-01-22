@@ -1,11 +1,11 @@
-import chalk from "chalk";
+import chalk from 'chalk';
 
-console.log(chalk.green("Hello World"));
-console.log(chalk.redBright("Nice collor"));
-console.log(chalk.yellowBright("I think"));
+console.log(chalk.green('Hello World'));
+console.log(chalk.redBright('Nice collor'));
+console.log(chalk.yellowBright('I think'));
 
 let age = 20;
 
-const firstName = "John";
+const firstName = 'John';
 
 console.log(chalk.bgCyanBright(`${firstName} is ${age} years old`));
