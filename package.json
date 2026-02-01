@@ -5,16 +5,23 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
 		"prepare": "husky",
 		"lint": "eslint .",
 		"format": "prettier . --write"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"transform": {}
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"chalk": "^5.6.2"
+		"@types/jest": "^30.0.0",
+		"axios": "^1.6.2",
+		"chalk": "^5.6.2",
+		"jest": "^30.2.0"
 	},
 	"devDependencies": {
 		"eslint": "^9.39.2",
