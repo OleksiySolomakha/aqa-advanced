@@ -5,10 +5,14 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
 		"prepare": "husky",
 		"lint": "eslint .",
 		"format": "prettier . --write"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"transform": {}
 	},
 	"keywords": [],
 	"author": "",
